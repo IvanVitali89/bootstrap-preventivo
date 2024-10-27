@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header> <!-- Navbar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid mx-5">
                 <a class="navbar-brand" href="#">Bool Factory</a>
@@ -30,10 +30,74 @@
             </div>
         </nav>
     </header>
-    <main class="container mx-5 mt-2">
+    <!-- main con colonne-->
+    <main class="container mx-5 mt-4">
         <div class="row">
-            <div class="col-md-8">.col-md-4</div>
-            <div class="col-md-4">.col-md-4 .offset-md-4</div>
+            <div class="col-md-9">
+                <h1 class="fs-2">Richiesta Preventivo</h1>
+                <h2 class="fs-6">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-medium">Nome</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-medium">Cognome</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label fw-medium">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <label class="form-label fw-medium">Tipo di Lavoro</label>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>Seleziona il tipo di lavoro</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label fw-medium">Textarea con Bootstrap
+                            5</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-medium">Codice Promozionale
+                            (opzionale)</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label fw-medium" for="exampleCheck1">Accetto la Privacy Policy</label>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-12 col-md-4 mb-3">
+                            <button type="submit" class="btn btn-primary">Calcola preventivo</button>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <h3 class="fw-bolder"> Prezzo finale</h3>
+                            <h4 class="fw-bolder"> €200,00 </h4>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="Screenshot_27-10-2024_2031_.jpeg" class="card-img-top" alt="300*200">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">I nostri contatti</h5>
+                        <p class="card-text fw-medium">Se hai bisogno di aiuto puoi contattarci:</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-medium">Help@boolfactory.test</li>
+                        <li class="list-group-item fw-medium">+1122334455</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Help desk</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
