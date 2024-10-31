@@ -31,12 +31,12 @@
         </nav>
     </header>
     <!-- main con colonne-->
-    <main class="container mx-5 mt-4">
+    <main class="container mx-5 mt-4 form">
         <div class="row">
             <div class="col-md-9">
                 <h1 class="fs-2">Richiesta Preventivo</h1>
                 <h2 class="fs-6">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</h2>
-                <form>
+                <form id="form">
                     <div class="mb-3">
                         <label for="Name" class="form-label fw-medium">Nome</label>
                         <input type="text" class="form-control" id="Name" aria-describedby="emailHelp">
@@ -50,7 +50,7 @@
                         <input type="email" class="form-control" id="Email">
                     </div>
                     <label class="form-label fw-medium">Tipo di Lavoro</label>
-                    <select class="form-select mb-3" aria-label="Default select example">
+                    <select class="form-select mb-3" aria-label="Default select example" id="typeWork">
                         <option selected>Seleziona il tipo di lavoro</option>
                         <option value="1">Sviluppo backend</option>
                         <option value="2">Sviluppo frontend</option>
