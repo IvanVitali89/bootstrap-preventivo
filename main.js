@@ -9,15 +9,29 @@ myForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const valueDiscount = document.getElementById("Discount").value;
     const DiscountBigger = valueDiscount.toUpperCase();
-    const tipeOfWork = document.getElementById("typeWork").value;
+    let tipeOfWork = document.getElementById("typeWork").value;
+    let finalPrice=0
     console.log(tipeOfWork);
     console.log(valueDiscount);
-    console.log(discountCode(valueDiscount));
+    console.log(discountCode(DiscountBigger));
     console.log(DiscountBigger);
 
 
-    //if ()
-
+    if ( tipeOfWork==='1' && discountCode(DiscountBigger)==true){
+        finalPrice = (20.50*10/100)*75;
+    } else {
+        finalPrice = 20.50*10;
+    } if ( tipeOfWork==='2' && discountCode(DiscountBigger)==true){
+        finalPrice = (15.30*10/100)*75;
+    } else {
+        finalPrice = 15.30*10;
+    } if ( tipeOfWork==='3' && discountCode(DiscountBigger)==true){
+        finalPrice = (33.60*10/100)*75;
+    } else {
+        finalPrice = 33.60*10;
+    }
+    console.log(finalPrice.toFixed(2));
+    
 
 
 });
