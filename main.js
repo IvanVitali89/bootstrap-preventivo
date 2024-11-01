@@ -31,13 +31,20 @@ myForm.addEventListener('submit', function (event) { //blocco l'aggiornamento au
 
     const stampFinalPrice = document.getElementById("result");
     console.log(stampFinalPrice);
+    const finalPriceDecimal = finalPrice.toFixed(2);
+    let decimalValue = finalPriceDecimal.toString().indexOf(".");
+    let afterDecimal = finalPriceDecimal.toString().substring(decimalValue + 1);
     if (discountCode(DiscountBigger) == true) { //controllo se lo sconto è applicato per il messaggio finale
         stampFinalPrice.innerHTML +=
-            `Prezzo Finale € ${finalPrice.toFixed(2)}`;
+            `
+            Prezzo Finale 
+            <p>€ ${finalPrice},<span class="fw-normal">${afterDecimal}</span></p>
+            `;
     } else {
         stampFinalPrice.innerHTML += `
-           Prezzo Finale € ${finalPrice.toFixed(2)}
-    Il codice promozionale non è valido
+           Prezzo Finale 
+           <p>€ ${finalPrice},<span class="fw-normal">${afterDecimal}</span></p>
+            <p class="fw-normal fs-6">Il codice promozionale non è valido</p>
     `;
     }
 
