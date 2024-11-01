@@ -31,6 +31,11 @@ myForm.addEventListener('submit', function (event) {
         finalPrice = 33.60*10;
     }
     console.log(finalPrice.toFixed(2));
+
+    const stampFinalPrice = document.getElementById("result");
+    console.log(stampFinalPrice);
+    stampFinalPrice.innerHTML+=
+    `Prezzo Finale € ${finalPrice.toFixed(2)}`;
     
 
 
